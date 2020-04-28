@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:lib="clr-namespace:Secao2_BehaviorTriggers.Lib"
+             mc:Ignorable="d"
+             x:Class="Secao2_BehaviorTriggers.MainPage">
+
+    <StackLayout>
+        <Label Text="Welcome to Xamarin.Forms!" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+        <Entry Placeholder="Digite o seu nome"
+               x:Name="TxtNome"
+               Text="">
+            <Entry.Behaviors>
+                <lib:MaiusculoBehavior/>
+            </Entry.Behaviors>
+            <Entry.Triggers>
+                <!--TRIGGER baseada em propriedade-->
+                <Trigger TargetType="Entry" 
+                         Property="IsFocused"
+                         Value="true">
+                    <Setter Property="BackgroundColor" 
+                            Value="Blue"/>
+                    <Setter Property="TextColor"
+                            Value="White"/>
+                </Trigger>
+                <Trigger TargetType="Entry" 
+                         Property="IsFocused"
+                         Value="true">
+                    <Setter Property="BackgroundColor" 
+                            Value="Green"/>
+                    <Setter Property="TextColor"
+                            Value="White"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+        <!--TRIGGER baseada em dados-->
+        <Button Text="Enviar">
+            <Button.Triggers>
+                <DataTrigger TargetType="Button"
+                             Binding="{Binding Source={x:Reference TxtNome}, Path=Text.Length}"
+                             Value="0">
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="BackgroundColor" Value="Gray"/>
+                    <Setter Property="IsEnabled" Value="False"/>
+                </DataTrigger>
+            </Button.Triggers>
+        </Button>
+        <!--TRIGGER baseada em eventos-->
+        <Entry x:Name="TxtEmail">
+            <Entry.Triggers>
+
+            </Entry.Triggers>
+        </Entry>
+    </StackLayout>
+</ContentPage>
