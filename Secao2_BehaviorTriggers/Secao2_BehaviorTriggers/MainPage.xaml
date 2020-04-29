@@ -14,11 +14,12 @@
         <Entry Placeholder="Digite o seu nome"
                x:Name="TxtNome"
                Text="">
+            <!--BEHAVIOR não está relacionado com as TRIGGERS-->
             <Entry.Behaviors>
                 <lib:MaiusculoBehavior/>
             </Entry.Behaviors>
+            <!--TRIGGER baseada em propriedade-->
             <Entry.Triggers>
-                <!--TRIGGER baseada em propriedade-->
                 <Trigger TargetType="Entry" 
                          Property="IsFocused"
                          Value="true">
@@ -52,7 +53,9 @@
         <!--TRIGGER baseada em eventos-->
         <Entry x:Name="TxtEmail">
             <Entry.Triggers>
-
+                <EventTrigger Event="TextChanged">
+                    <lib:EmailValidoTrigger/>
+                </EventTrigger>
             </Entry.Triggers>
         </Entry>
     </StackLayout>
