@@ -24,19 +24,33 @@ namespace Secao3_ListView
         {
             return new List<Grupo>
             {
-                new Grupo("Presidente", "CEO")
+                new Grupo("Presidente", "CEO","Presidente da Empresa")
                 {
-                    new Pessoa { Nome = "José" }
+                    new Pessoa { Nome = "José"}
                 },
-                new Grupo("Diretores", "Dir.")
+                new Grupo("Diretores", "Dir.","Diretor da Empresa")
                 {
                     new Pessoa { Nome = "João" },
                     new Pessoa { Nome = "Maria" },
                 },
-                new Grupo("Gerentes", "Ger.")
+                new Grupo("Gerentes", "Ger.","Gerentes da Empresa")
                 {
                     new Pessoa { Nome = "Felipe" },
                     new Pessoa { Nome = "Judas" },
+                },
+                new Grupo("Funcionarios", "Func.","Funcionarios da Empresa")
+                {
+                    new Pessoa { Nome = "Felipe" },
+                    new Pessoa { Nome = "Judas" },
+                    new Pessoa { Nome = "José"},
+                    new Pessoa { Nome = "João" },
+                    new Pessoa { Nome = "Maria" },
+                    new Pessoa { Nome = "Felipe" },
+                    new Pessoa { Nome = "Judas" },
+                    new Pessoa { Nome = "Danilo" },
+                    new Pessoa { Nome = "Jessica" },
+                    new Pessoa { Nome = "Hellem" },
+                    new Pessoa { Nome = "Debora" },
                 },
             };
 

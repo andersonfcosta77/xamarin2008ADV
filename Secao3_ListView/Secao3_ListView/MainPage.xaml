@@ -8,13 +8,36 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Welcome to Xamarin.Forms!"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               BackgroundColor="Blue"/>
+        <!--Criando a lista
         <ListView x:Name="ListaFuncionarios"
                   IsGroupingEnabled="True"
                   GroupDisplayBinding="{Binding Titulo}"
                   GroupShortNameBinding="{Binding TituloCurto}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nome}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        -->
+        <!--Personalizando o cabeçalho da lista-->
+        <ListView x:Name="ListaFuncionarios"
+                  IsGroupingEnabled="True">
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="15,0,0,0">
+                            <Label Text="{Binding Titulo}"/>
+                            <Label Text="{Binding Descricao}"
+                                   TextColor="LightGray"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Nome}"/>
