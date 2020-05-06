@@ -2,16 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:Secao3_ListView.Model"
              mc:Ignorable="d"
              x:Class="Secao3_ListView.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:SeletorTemplate x:Key="SelectorPessoa"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand"
-               BackgroundColor="Blue"/>
+
         <!--Criando a lista
         <ListView x:Name="ListaFuncionarios"
                   IsGroupingEnabled="True"
@@ -26,7 +29,17 @@
         -->
         <!--Personalizando o cabeçalho da lista-->
         <ListView x:Name="ListaFuncionarios"
-                  IsGroupingEnabled="True">
+                  IsGroupingEnabled="True"
+                  ItemTemplate="{StaticResource Key=SelectorPessoa}">
+            <ListView.Header>
+                <Label Text="Header da ListView"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       BackgroundColor="Blue"/>
+            </ListView.Header>
+            <ListView.Footer>
+                <Label Text="Pode ser adicionado até STACKELAYOUT"/>
+            </ListView.Footer>
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -38,12 +51,11 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.GroupHeaderTemplate>
-            <ListView.ItemTemplate>
+            <!--<ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Nome}"/>
                 </DataTemplate>
-            </ListView.ItemTemplate>
+            </ListView.ItemTemplate>-->
         </ListView>
-    
     </StackLayout>
 </ContentPage>

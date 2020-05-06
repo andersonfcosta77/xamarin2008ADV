@@ -26,31 +26,53 @@ namespace Secao3_ListView
             {
                 new Grupo("Presidente", "CEO","Presidente da Empresa")
                 {
-                    new Pessoa { Nome = "José"}
+                    new Pessoa { Nome = "José",
+                                 RankingEficiencia= 8,
+                                 IsRequired=true}
                 },
                 new Grupo("Diretores", "Dir.","Diretor da Empresa")
                 {
-                    new Pessoa { Nome = "João" },
-                    new Pessoa { Nome = "Maria" },
+                    new Pessoa { Nome = "João",
+                                 RankingEficiencia=6,
+                                 IsRequired=false },
+                    new Pessoa { Nome = "Maria",
+                                 RankingEficiencia=8,
+                                 IsRequired=true },
                 },
                 new Grupo("Gerentes", "Ger.","Gerentes da Empresa")
                 {
-                    new Pessoa { Nome = "Felipe" },
-                    new Pessoa { Nome = "Judas" },
+                    new Pessoa { Nome = "Felipe",
+                                 RankingEficiencia=7,
+                                 IsRequired=true },
+                    new Pessoa { Nome = "Judas",
+                                 RankingEficiencia=9,
+                                 IsRequired=false },
                 },
                 new Grupo("Funcionarios", "Func.","Funcionarios da Empresa")
                 {
-                    new Pessoa { Nome = "Felipe" },
-                    new Pessoa { Nome = "Judas" },
-                    new Pessoa { Nome = "José"},
-                    new Pessoa { Nome = "João" },
-                    new Pessoa { Nome = "Maria" },
-                    new Pessoa { Nome = "Felipe" },
-                    new Pessoa { Nome = "Judas" },
-                    new Pessoa { Nome = "Danilo" },
-                    new Pessoa { Nome = "Jessica" },
-                    new Pessoa { Nome = "Hellem" },
-                    new Pessoa { Nome = "Debora" },
+                    new Pessoa { Nome = "Felipe",
+                                 IsRequired=false },
+                    new Pessoa { Nome = "Judas",
+                                 IsRequired=false },
+                    new Pessoa { Nome = "José", 
+                                 IsRequired=false},
+                    new Pessoa { Nome = "João", 
+                                 IsRequired=true,
+                                 RankingEficiencia=6 },
+                    new Pessoa { Nome = "Maria", 
+                                 IsRequired=false },
+                    new Pessoa { Nome = "Felipe", 
+                                 IsRequired=false },
+                    new Pessoa { Nome = "Judas", 
+                                 IsRequired=false },
+                    new Pessoa { Nome = "Danilo",
+                                 IsRequired=false },
+                    new Pessoa { Nome = "Jessica",
+                                 IsRequired=false },
+                    new Pessoa { Nome = "Hellem",
+                                 IsRequired=false },
+                    new Pessoa { Nome = "Debora",
+                                 IsRequired=false },
                 },
             };
 

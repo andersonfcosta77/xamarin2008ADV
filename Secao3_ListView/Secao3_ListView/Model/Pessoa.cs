@@ -6,6 +6,8 @@
 public class Pessoa
 {
     public string Nome { get; set; }
+    public int RankingEficiencia { get; set; }
+    public bool IsRequired { get; set; }
 }
 
 
