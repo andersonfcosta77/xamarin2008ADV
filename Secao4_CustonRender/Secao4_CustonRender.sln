@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Secao4_CustonRender.Android", "Secao4_CustonRender.Android\Secao4_CustonRender.Android.csproj", "{98949F64-2B12-4790-B219-5476338E95C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Secao4_CustonRender", "Secao4_CustonRender\Secao4_CustonRender.csproj", "{1A78AEF9-B4EC-4193-9816-459BED9E47B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98949F64-2B12-4790-B219-5476338E95C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98949F64-2B12-4790-B219-5476338E95C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98949F64-2B12-4790-B219-5476338E95C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{98949F64-2B12-4790-B219-5476338E95C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98949F64-2B12-4790-B219-5476338E95C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98949F64-2B12-4790-B219-5476338E95C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1A78AEF9-B4EC-4193-9816-459BED9E47B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A78AEF9-B4EC-4193-9816-459BED9E47B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A78AEF9-B4EC-4193-9816-459BED9E47B3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1A78AEF9-B4EC-4193-9816-459BED9E47B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A78AEF9-B4EC-4193-9816-459BED9E47B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A78AEF9-B4EC-4193-9816-459BED9E47B3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A13D54F-1117-47D3-9576-953CB274026D}
+	EndGlobalSection
+EndGlobal

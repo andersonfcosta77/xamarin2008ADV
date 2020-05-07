@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:custon="clr-namespace:Secao4_CustonRender.Custons"
+             mc:Ignorable="d"
+             x:Class="Secao4_CustonRender.MainPage">
+
+    <StackLayout x:Name="ContainerObj" 
+                 VerticalOptions="Center">
+        <Label Text="Welcome to Xamarin.Forms!" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+        
+        <custon:myButton Text="Eu sou Super Diferente!"/>
+
+    </StackLayout>
+</ContentPage>
