@@ -12,17 +12,17 @@ using Android.Widget;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly:ExportRenderer(typeof(Secao4_CustonRender.Custons.myButton),typeof(Secao4_CustonRender.Droid.myButtonRenderer))]
+[assembly:ExportRenderer(typeof(Secao4_CustonRender.Custons.myButton),typeof(Secao4_CustonRender.Droid.MyButtonRenderer))]
 namespace Secao4_CustonRender.Droid
 {
-    public class myButtonRenderer : ButtonRenderer
+    [Obsolete]
+    public class MyButtonRenderer : ButtonRenderer
     {
         protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.Button> e)
         {
             base.OnElementChanged(e);
             if (Control != null)
             {
-
                 Control.SetBackgroundResource(Resource.Drawable.button_round);
             }
         }

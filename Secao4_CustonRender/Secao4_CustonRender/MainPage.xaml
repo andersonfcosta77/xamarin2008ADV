@@ -12,8 +12,6 @@
         <Label Text="Welcome to Xamarin.Forms!" 
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"/>
-        
-        <custon:myButton Text="Eu sou Super Diferente!"/>
-
+       <custon:myButton Text="Eu sou Super Diferente!"/>
     </StackLayout>
 </ContentPage>
