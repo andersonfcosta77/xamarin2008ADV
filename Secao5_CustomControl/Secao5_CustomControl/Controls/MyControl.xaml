@@ -7,7 +7,11 @@
              x:Class="Secao5_CustomControl.Controls.MyControl">
   <ContentView.Content>
       <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
+            <Image x:Name="imagem"
+                   WidthRequest="100"
+                   HeightRequest="100"/>
+            <Label x:Name="texto"
+                   HorizontalOptions="Center"/>
       </StackLayout>
   </ContentView.Content>
 </ContentView>
