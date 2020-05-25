@@ -8,6 +8,7 @@
   <ContentView.Content>
       <StackLayout>
             <Image x:Name="imagem"
+                   Source=""
                    WidthRequest="100"
                    HeightRequest="100"/>
             <Label x:Name="texto"
