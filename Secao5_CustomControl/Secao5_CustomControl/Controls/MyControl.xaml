@@ -8,10 +8,12 @@
   <ContentView.Content>
       <StackLayout>
             <Image x:Name="imagem"
-                   Source=""
+                   HorizontalOptions="Center"
+                   Source="Imagem1300x300.jpg"
                    WidthRequest="100"
                    HeightRequest="100"/>
-            <Label x:Name="texto"
+            <Label x:Name="titulo"
+                   Text="Meu Texto"
                    HorizontalOptions="Center"/>
       </StackLayout>
   </ContentView.Content>

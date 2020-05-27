@@ -11,8 +11,12 @@
         <!-- Place new controls here -->
         <Label Text="Welcome to Xamarin.Forms!" 
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
-        <Controls:MyControl />
+               VerticalOptions="Center" />
+        <Controls:MyControl Titulo="Titulo X1"
+                            TituloCor="Blue"/>
+        <Controls:MyControl Titulo="Titulo X2"
+                            TituloCor="Red"/>
+        <Controls:MyControl TituloCor="Green"/>
     </StackLayout>
 
 </ContentPage>
