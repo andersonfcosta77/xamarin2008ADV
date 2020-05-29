@@ -17,5 +17,10 @@ namespace Secao5_CustomControl
         {
             InitializeComponent();
         }
+
+        private void MyControl_Tapped(object sender, EventArgs e)
+        {
+            DisplayAlert("Oi, eu sou um evento", "Fui Executado","Ok");
+        }
     }
 }

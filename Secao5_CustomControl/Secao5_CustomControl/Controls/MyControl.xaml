@@ -9,12 +9,14 @@
       <StackLayout>
             <Image x:Name="imagem"
                    HorizontalOptions="Center"
-                   Source="Imagem1300x300.jpg"
                    WidthRequest="100"
                    HeightRequest="100"/>
             <Label x:Name="titulo"
                    Text="Meu Texto"
                    HorizontalOptions="Center"/>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </StackLayout.GestureRecognizers>
       </StackLayout>
   </ContentView.Content>
 </ContentView>

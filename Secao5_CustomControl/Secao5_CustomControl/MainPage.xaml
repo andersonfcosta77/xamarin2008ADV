@@ -13,10 +13,16 @@
                HorizontalOptions="Center"
                VerticalOptions="Center" />
         <Controls:MyControl Titulo="Titulo X1"
-                            TituloCor="Blue"/>
+                            TituloCor="Blue"
+                            Imagem ="Imagem1300x300.jpg"
+                            Tapped="MyControl_Tapped"/>
         <Controls:MyControl Titulo="Titulo X2"
-                            TituloCor="Red"/>
-        <Controls:MyControl TituloCor="Green"/>
+                            TituloCor="Red"
+                            Imagem="Imagem2300x300.jpg"/>
+        <Controls:MyControl Titulo="Titulo X3"
+                            TituloCor="Green"
+                            Imagem="Imagem3300x300.jpg"/>
+        <Controls:MyControl TituloCor="Cyan"/>
     </StackLayout>
 
 </ContentPage>
