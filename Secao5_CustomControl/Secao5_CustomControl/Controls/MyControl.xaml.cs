@@ -22,6 +22,14 @@ namespace Secao5_CustomControl.Controls
         //--------------------
         public event EventHandler Tapped;
 
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            if (Tapped != null)
+            {
+                Tapped(sender, e);
+            }
+        }
+
         //--------------------
         //Titulo
         //--------------------
@@ -92,14 +100,6 @@ namespace Secao5_CustomControl.Controls
         {
             var myControl = (MyControl)bindable;
             myControl.imagem.Source = (string)newValue;
-        }
-
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            if (Tapped != null)
-            {
-                Tapped(sender, e);
-            }
         }
     }
 }
