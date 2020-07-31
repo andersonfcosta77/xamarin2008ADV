@@ -5,16 +5,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Secao8_GestoeAnimacao.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label x:Name="Label1"
+    <!--Foi criando um AbsoluteLayout para que o label possa ser movido com Gesture Pan-->
+    <AbsoluteLayout>
+        <StackLayout>
+            <Label x:Name="MyLabel"
                Text="Welcome to Xamarin.Forms!" 
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand" >
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-            </Label.GestureRecognizers>
-        </Label>
-    </StackLayout>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="MyLabelBoxView"
+               Text="Altera BoxView" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_LabelBoxView"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <BoxView x:Name="MyBox"
+                     Color="Green" 
+                     WidthRequest="50"
+                     HeightRequest="50"/>
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>
